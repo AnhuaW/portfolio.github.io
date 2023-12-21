@@ -21,6 +21,22 @@ li{
 .rect-img:hover img{
 	opacity: 0.3 !important;
 }
+
+.sidenav {
+	width: 100px;
+	position: fixed;
+	z-index: 1;
+	top:  18rem;
+	left: 5px;
+	overflow-x: hidden;
+	padding: 8px 0;
+}
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
 /*end of custom css*/
 
 html, body, div, span, applet, object,
@@ -116,6 +132,7 @@ input, select, textarea {
 
 	body {
 		background: #242943;
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3396,7 +3413,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		/*background-image: url("../../images/banner.jpg");*/
+		background-image: url("../../images/banner.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3426,7 +3443,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color:#003353 ;
+			background-color:#242943; ;
 			content: '';
 			display: block;
 			height: 100%;
