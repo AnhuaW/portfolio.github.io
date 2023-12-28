@@ -22,21 +22,29 @@ li{
 	opacity: 0.3 !important;
 }
 
+/*Side Nav*/
+
 .sidenav {
-	width: 100px;
+	width: 10vw;
 	position: fixed;
 	z-index: 1;
-	top:  18rem;
-	left: 5px;
+	top: 40vh;
+	left: 2vw;
+	right: 2vw;
 	overflow-x: hidden;
-	padding: 8px 0;
 }
 .sidenav a {
-	padding: 6px 8px 6px 16px;
 	text-decoration: none;
 	text-align: center;
 	display: block;
 }
+
+.side {
+	margin-left: 10vw;
+}
+
+/* Side Content */
+
 /*end of custom css*/
 
 html, body, div, span, applet, object,
