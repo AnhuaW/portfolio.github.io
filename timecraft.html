@@ -31,20 +31,13 @@
 						</nav>
 					</header>
 
+				<!-- The Modal -->
+				<div id="modal1" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
 				<!-- Side Nav-->
 				<div class="sidenav">
 					<a class="scrolly" href="#banner">Introduction</a>
@@ -65,11 +58,14 @@
 						<header class="major">
 							<h1>Timecraft</h1>
 						</header>
-						<div>
-							<p> Time management tool created for <u>work from home</u> professionals.</p>
+						<div class="content">
+							<p> User Interview, Usability Testing, Affinity Diagram, Wireframe, Prototyping, Procreate, Figma</p>
 						</div>
 					</div>
 				</section>
+
+				
+
 				<!-- Main -->
 					<div id="main" class="light-theme">
 						<div class="alt side">
@@ -111,8 +107,9 @@
 									<h2>Overview</h2>
 								</header>
 								<h3>Project Overview</h3>
+								<p> Timecraft is a <strong>web-based app</strong> designed for students and professionals working from home. it aims to help enhance <u>time management</u> and assis users in building a <u>productive routine</u></p>
 								<h3>Goals and Objectives</h3>
-								<p> TODO </p>
+								<p>  To create an <strong>intuitive</strong>, <strong>easy to use </strong>time managment tool that caters to the <u>specific needs</u> of remote students and workers </p>
 							</div>
 						</section>
 						<hr>
@@ -125,8 +122,9 @@
 								<h3>
 									Challenge
 								</h3>
+								<p> Addressing the unique time management challenges faced by remote workers and students, such as distraction, procrastination, and inefficient task management. </p>
 								<h3> User Needs</h3>
-								<p> TODO </p>
+								<p> A reliable, user-friendly app that integrates task management with effective time tracking and minimization of distractions</p>
 							</div>
 						</section>
 						<hr>
@@ -136,16 +134,100 @@
 								<header class="major">
 									<h2>Research</h2>
 								</header>
-								<h3>
-									Research Methods
-								</h3>
+								<h3>Interview</h3>
+								<p>We conducted semi-structerued interviews on 8 participants with 4 work from home professionals and 4 students with remote expereinces to learn more about thier needs and frustrations. </p>
+
+								<h3>Competivie Analysis</h3>
+								<p> We conducted a competitive analysis on 4 different time managment tools as they emerged during our interviews in order to have a better understanding of the strengths and weaknesses of exisitng tools</p>
+								<ol>
+									<li class="intro">
+										Google Calendar
+									</li>
+
+									<li class="intro">
+										Todoist
+									</li>
+
+									<li class="intro">
+										Clockify
+									</li>
+
+									<li class="intro">
+										Forest
+									</li>
+
+								</ol>
+								<p> TODO add table for comparison </p>
+
+								
 								<h3>
 									Key Findings
 								</h3>
+
+								<p> After collecting and Analyzing </p>
+								<p> TODO add quotes from interview </p>
+
 								<h3>
 									Persona
 								</h3>
-								<p> TODO </p>
+
+								<p>
+									Based on our initial research and collected data, we created two different personas to represent our target user group.
+								</p>
+								<div class="row">
+									<div class="col-5 col-12-medium">
+										<h5>Professional</h5>
+										<span class="image fit">
+											<a href="#modal1"><img class="modal-img" id="img1" src="img/timeCraft/persona1.png" alt="Persona1: work from home professional" /></a>
+										</span>
+										<script>
+										// Get the modal
+										var modal = document.getElementById("modal1");
+										
+										// Get the image and insert it inside the modal - use its "alt" text as a caption
+										var img = document.getElementById("img1");
+										var modalImg = document.getElementById("img01");
+										var captionText = document.getElementById("caption");
+										img.onclick = function(){
+											modal.style.display = "block";
+											modalImg.src = this.src;
+											captionText.innerHTML = this.alt;
+										}
+										
+										// Get the <span> element that closes the modal
+										var span = document.getElementsByClassName("close")[0];
+										
+										// When the user clicks on <span> (x), close the modal
+										span.onclick = function() { 
+											modal.style.display = "none";
+										}
+										</script>
+									</div>
+
+									<div class="col-5  col-12-medium">
+										<h5>Student</h5>
+										<span class="image fit">
+										<img class="modal-img" id="img2" src="img/timeCraft/persona2.png" alt=" Persona2: student with remote classroom and work expereinces" />
+										</span>
+										<script>
+										// Get the modal
+										var modal = document.getElementById("modal1");
+										
+										// Get the image and insert it inside the modal - use its "alt" text as a caption
+										var img = document.getElementById("img2");
+										var modalImg = document.getElementById("img01");
+										var captionText = document.getElementById("caption");
+										img.onclick = function(){
+											modal.style.display = "block";
+											modalImg.src = this.src;
+											captionText.innerHTML = this.alt;
+										}
+										</script>
+									</div>
+								</div>
+
+
+								
 							</div>
 						</section>
 						<hr>
