@@ -4,7 +4,63 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+(function($) { "use strict";
+		
+		// Page cursors
+	
+		var t = document.getElementById("cursor"),
+			e = document.getElementById("cursor2"),
+			i = document.getElementById("cursor3");
+	
+		function moveCursor(n) {
+			t.style.left = n.clientX + "px";
+			t.style.top = n.clientY + "px";
+			e.style.left = n.clientX + "px";
+			e.style.top = n.clientY + "px";
+			i.style.left = n.clientX + "px";
+			i.style.top = n.clientY + "px";
+		}
+	
+		// Update cursor position every 100 milliseconds
+		setInterval(function() {
+			document.getElementsByTagName("body")[0].addEventListener("mousemove", moveCursor);
+		}, 100);
+	
+		function addHover() {
+			e.classList.add("hover");
+			i.classList.add("hover");
+		}
+	
+		function removeHover() {
+			e.classList.remove("hover");
+			i.classList.remove("hover");
+		}
+	
+		removeHover();
+	
+		var r = document.querySelectorAll("a");
+		var r2 = document.querySelectorAll(".hover-target");
+	
+		for (var a = r.length - 1; a >= 0; a--) {
+			addListeners(r[a]);
+		}
+		for (var a= r2.length-1; a>=0; a--){
+			addListeners(r2[a]);
+		}
+	
+		function addListeners(element) {
+			element.addEventListener("mouseover", addHover);
+			element.addEventListener("mouseout", removeHover);
+		}
+	
+	})(jQuery);
+
+// Check Cursor Style and update
+
+
 (function($) {
+
 
 	var	$window = $(window),
 		$body = $('body'),

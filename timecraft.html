@@ -30,10 +30,15 @@
 							<!-- <a href="#menu">Menu</a> -->
 						</nav>
 					</header>
+					
+				<!--Cursor-->
+				<div class='cursor' id="cursor"></div>
+				<div class='cursor2' id="cursor2"></div>
+				<div class='cursor3' id="cursor3"></div>
 
 				<!-- The Modal -->
 				<div id="modal1" class="modal">
-					<span class="close">&times;</span>
+					<span class="close hover-target">&times;</span>
 					<img class="modal-content" id="img01">
 					<div id="caption"></div>
 				</div>
@@ -138,7 +143,7 @@
 								<p>We conducted semi-structerued interviews on 8 participants with 4 work from home professionals and 4 students with remote expereinces to learn more about thier needs and frustrations. </p>
 
 								<h3>Competivie Analysis</h3>
-								<p> We conducted a competitive analysis on 4 different time managment tools as they emerged during our interviews in order to have a better understanding of the strengths and weaknesses of exisitng tools</p>
+								<p> We also decided to do a competitive analysis on 4 different time managment tools as they emerged during our interviews in order to have a better understanding of the strengths and weaknesses of exisitng tools.</p>
 								<ol>
 									<li class="intro">
 										Google Calendar
@@ -155,16 +160,65 @@
 									<li class="intro">
 										Forest
 									</li>
-
 								</ol>
-								<p> TODO add table for comparison </p>
-
+								<div class="table-wrapper">
+									<table class="alt">
+										<thead>
+											<tr>
+												<th>Tool</th>
+												<th>Event Management</th>
+												<th>Task Management</th>
+												<th>Focus Enhancement</th>
+												<th>Performance Analysis</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Google Calendar</td>
+												<td>&#10003</td>
+												<td>&#10003</td>
+												<td>&#10007</td>
+												<td>&#10007</td>
+											</tr>
+											<tr>
+												<td>Todoist</td>
+												<td>&#10007</td>
+												<td>&#10003</td>
+												<td>&#10007</td>
+												<td>&#10007</td>
+											</tr>
+											<tr>
+												<td>Clockify</td>
+												<td>&#10007</td>
+												<td>&#10003</td>
+												<td>&#10007</td>
+												<td>&#10003</td>
+											</tr>
+											<tr>
+												<td>Forest</td>
+												<td>&#10007</td>
+												<td>&#10007</td>
+												<td>&#10003</td>
+												<td>&#10003</td>
+											</tr>
+										</tbody>
+										<tfoot>
+										</tfoot>
+									</table>
+								</div>
 								
 								<h3>
 									Key Findings
 								</h3>
 
-								<p> After collecting and Analyzing </p>
+								<p> After collecting and analyzing the data from interview as well as our competitive analysis, we discovered that there is a high demand for an <strong> all-in-one solution </strong> for:
+								<ol>
+									<li class="intro">Task Tracking</li>
+									<li class="intro">Event Management</li>
+									<li class="intro">Focus Enhancement</li>
+									<li class="intro">Performance Analysis</li>
+
+								</ol>
 								<p> TODO add quotes from interview </p>
 
 								<h3>
@@ -172,7 +226,7 @@
 								</h3>
 
 								<p>
-									Based on our initial research and collected data, we created two different personas to represent our target user group.
+									Based on our initial research, we created two different personas to represent our target user group.
 								</p>
 								<div class="row">
 									<div class="col-5 col-12-medium">
@@ -207,7 +261,9 @@
 									<div class="col-5  col-12-medium">
 										<h5>Student</h5>
 										<span class="image fit">
-										<img class="modal-img" id="img2" src="img/timeCraft/persona2.png" alt=" Persona2: student with remote classroom and work expereinces" />
+										<a href="#modal1">
+											<img class="modal-img" id="img2" src="img/timeCraft/persona2.png" alt=" Persona2: student with remote classroom and work expereinces" />
+										</a>
 										</span>
 										<script>
 										// Get the modal
