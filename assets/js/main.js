@@ -4,6 +4,97 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/*slides show*/
+
+$(document).ready(function() {
+
+	// modal Images
+	var modal = document.getElementById("modal1");
+	if(modal){						
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var imgs = document.getElementsByClassName("modal-img");
+		console.log(imgs); 
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		for (var i = 0; i < imgs.length;i++){
+			imgs[i].addEventListener("click", function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}); 
+		}
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+		
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+			modal.style.display = "none";
+		}
+	}
+    let slideIndex = 1;
+    showSlides(slideIndex);
+	autoPlay();
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = $(".mySlides");
+        let dots = $(".dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("active");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].classList.add("active");
+    }
+
+	function autoPlay(){
+		let i;
+        let slides = $(".mySlides");
+        let dots = $(".dot");
+        for (i = 0; i < slides.length; i++) {
+            slides.eq(i).css("display", "none");
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots.eq(i).removeClass("active");
+        }
+        slides.eq(slideIndex - 1).css("display", "block");
+        dots.eq(slideIndex - 1).addClass("active");
+        setTimeout(autoPlay, 4000);
+	}
+
+    // Event listeners for next/previous buttons
+    $(".prev").click(function() {
+        plusSlides(-1);
+    });
+
+    $(".next").click(function() {
+        plusSlides(1);
+    });
+
+    // Event listeners for thumbnail dots
+    $(".dot").click(function() {
+        let dotIndex = $(this).index() + 1;
+        currentSlide(dotIndex);
+    });
+});
 
 (function($) { "use strict";
 		
@@ -25,7 +116,7 @@
 		// Update cursor position every 100 milliseconds
 		setInterval(function() {
 			document.getElementsByTagName("body")[0].addEventListener("mousemove", moveCursor);
-		}, 100);
+		}, 0);
 	
 		function addHover() {
 			e.classList.add("hover");
@@ -53,12 +144,12 @@
 			element.addEventListener("mouseover", addHover);
 			element.addEventListener("mouseout", removeHover);
 		}
+
+
 	
 	})(jQuery);
 
 // Check Cursor Style and update
-
-
 (function($) {
 
 
