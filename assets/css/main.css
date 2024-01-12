@@ -10,6 +10,47 @@
 /*Primary Color before: 232943*/
 /*Primary Color now: 243143*/
 /*custom css*/
+.small-link{
+	font-size: 1rem;
+	border-bottom: dotted 1px;
+	font-weight: normal;
+}
+iframe{
+	width: 50%;
+	height: 40vh;
+}
+
+.flex-col-4{
+	flex: 25%;
+	padding: 20px;
+}
+
+.flex-col-3{
+	flex: 33%;
+	padding: 20px;
+}
+
+.flex-col-2{
+	flex:50%;
+	padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 980px) {
+	.flex-col-4{
+		flex: 50%;
+	}
+	.flex-col-2,.flex-col-3{
+		flex: 100%;
+	}
+}
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.row {
+		flex-direction: column;
+	}
+}
+
 
 li{
 	font-size:80% !important;
@@ -71,7 +112,7 @@ li{
 /* Side Content */
 .side {
 	margin-left: 16vw;
-	margin-right:12vw;
+	margin-right:16vw;
 	padding-top: 9vh;
 	padding-bottom: 9vh;
 }
@@ -229,7 +270,6 @@ a:hover {
 
 /* Slideshow container */
 .slideshow-container {
-	max-height: 50vh;
 	max-width:80vw;
     position: relative;
 	overflow-x: hidden;
