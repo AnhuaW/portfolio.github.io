@@ -5,6 +5,10 @@
 */
 
 /*slides show*/
+window.addEventListener('load', function() {
+    var loader = document.getElementById('loader-wrapper');
+    loader.style.display = 'none';
+});
 
 $(document).ready(function() {
 

@@ -10,6 +10,63 @@
 /*Primary Color before: 232943*/
 /*Primary Color now: 243143*/
 /*custom css*/
+
+/* The overlay */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#243143; /* Dark background with a bit of transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures that the loader is above other elements */
+}
+
+/* The spinner */
+#loader {
+    border: 2px solid #161d27; /*Dark Blue*/
+    border-top: 3.2px solid #8ef6ff; /*Light Cyan*/
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+/* Animation for spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* Center the video frame */
+
+/* Style the video container */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 80vw; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+	border-radius: 5px;
+}
+
+/* Style the video */
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the overlay image */
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+	z-index: 1;
+}
+
 .small-link{
 	font-size: 1rem;
 	border-bottom: dotted 1px;
