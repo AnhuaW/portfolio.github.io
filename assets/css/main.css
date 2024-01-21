@@ -4019,11 +4019,11 @@ input, select, textarea {
 /*main body color before:2a2f4a*/
 /*main body color now:2e384e*/
 	#main {
-		background-color: #1d263a;
+		background-color: #202b41;
 	}
 
 		#main > * {
-			border-top: solid 1px rgba(212, 212, 255, 0.1);
+			border-top: solid 1px rgba(16, 16, 23, 0.1);
 		}
 
 			#main > *:first-child {
