@@ -11,6 +11,28 @@
 /*Primary Color now: 243143*/
 /*custom css*/
 
+/*back to top*/
+.back-to-top{
+	display: block;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	background-color:#64828d;
+	color:#ffffff;
+	cursor: pointer;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 50px;
+
+}
+
+
 /* The overlay */
 #loader-wrapper {
     position: fixed;
