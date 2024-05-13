@@ -10,7 +10,14 @@ window.addEventListener('load', function() {
     loader.style.display = 'none';
 });
 
+
 $(document).ready(function() {
+		/*mockup*/
+	document.addEventListener("DOMContentLoaded", function() {
+		const mockElements = document.querySelectorAll('.mock');
+		mockElements.forEach(el => el.classList.add('is-visible'));
+	});
+
 
 	// modal Images
 	var modal = document.getElementById("modal1");
