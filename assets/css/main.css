@@ -240,7 +240,7 @@ button:hover {
 	font-size: 16px;
 	border: none;
 	outline: none;
-	background-color: var(--rp-highlight-med);
+	background-color: var(--rp-overlay);
 	color:var(--rp-text);
 	cursor: pointer;
 	padding-top: 12px;
@@ -249,6 +249,7 @@ button:hover {
 	padding-right: 16px;
 	border-radius: 50px;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	text-transform: capitalize !important;
 }
 
 /* The overlay */
