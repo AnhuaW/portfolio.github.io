@@ -115,7 +115,7 @@
 								<header class="major">
 									<h4>Introduction</h4>
 								</header>
-								<p> Soul of the Forest is a turn-based RPG game that draws inspiration from classic and beloved RPG titles like Undertale and Franken. The game combines the best of turn-based strategic combat system and rich over world exploration. Player is encouraged to follow the hints provided by the NPCs to explore and complete certain interactions in order to advance through the game.</p>
+								<p> Soul of the Forest is a turn-based RPG game that draws inspiration from classic and beloved RPG titles like Undertale and Franken. The game combines the best of turn-based strategic combat system and rich overworld exploration. Player is encouraged to follow the hints provided by the NPCs to explore and complete certain interactions in order to advance through the game.</p>
 							</div>
 						</section>
 						
@@ -127,8 +127,8 @@
 									<h4>Problem Statement</h4>
 								</header>
 							</header>
-							<h3 >How can we redesign the current game UI to increase the <u>visibility of system status</u> and effectively guide player through the rich narrative and gameplay content without spoiling the fun of exploration?
-							</h3>
+							<h2 >How can I redesign the current game UI to increase the <u>visibility of system status</u> and effectively guide player through the rich narrative and gameplay content without spoiling the fun of exploration?
+							</h2>
 							<p>After initial design discussion with the the gameplay designers and design lead, the team voted against of the idea of having a UI element informing player of the quest information the due to the risk of exploiting game content too early.However, as development continues and we get more play testing feedback, we discovered:</p>
 							<p>More than <span class="x-large-font pad"> 70% </span> of the players <strong>struggle</strong> with understanding what to expect for a given <strong> quest </strong> and tracking their <b>progress</b>.</p>
 							<div class="row">
@@ -168,11 +168,57 @@
 								<header class="major">
 									<h4>Design & Development Process</h4>
 								</header>
-								<h3 class>A resigned quest UI system with a <u>quest marker</u> for easy access to <u class="wavy">current objective</u> 
+								<h2 class>A resigned quest UI system with a <u>quest marker</u> for easy access to <u class="wavy">current objective</u> 
 									and a <u>quest log</u> for contextual <u class="wavy">background </u>information and <u class="wavy">progress</u> tracking.
-								</h3>
-								<h5> Design Rationale and Competitive Analysis</h5>
+								</h2>
+								<h4> Design Rationale and Competitive Analysis</h4>
+								<div class="table-wrapper">
+									<table class="alt">
+										<thead>
+											<tr>
+												<th></th>
+												<th>Quest Marker</th>
+												<th>Quest Log  </th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Where it is located on the screen</td>
+												<td>A component of the player HUD (heads-up display), meaning that the information is visually relayed to the player as part of a game’s UI.</td>
+												<td>A part of the pop-up pause menu, where the player is able to pause the game process and adjust the game settings or read about the their quests.</td>
 
+											</tr>
+											<tr>
+												<td>What is the most important information</td>
+												<td>The current objective 
+													Player’s progress on the current objective.</td>
+												<td>contextual background information about the area
+													detailed description of the current objective
+													Player’s overall progress</td>
+
+											</tr>
+
+											<tr>
+												<td class="top-left">Examples from some narrative & quests driven games</td>
+												<td><span class="image fit"><img class="modal-img hover-target" src="img/games/quest/quest-forest.png" alt="Proposed UI"></span></td>
+												<td><span class="image fit"><img class="modal-img hover-target" src="img/games/quest/quest-forest.png" alt="Proposed UI"></span></td>
+											</tr>
+											<tr>
+												<td class="top-left">More Examples</td>
+												<td><span class="image fit"><img class="modal-img hover-target" src="img/games/quest/quest-forest.png" alt="Proposed UI"></span></td>
+												<td><span class="image fit"><img class="modal-img hover-target" src="img/games/quest/quest-forest.png" alt="Proposed UI"></span></td>
+
+											</tr>
+										</tbody>
+										<tfoot>
+										</tfoot>
+									</table>
+								</div>
+								<p>After I presented the initial findings to and had a few rounds of discussion with the team, we were able to reach an agreement that it is necessary to implement both because:</p>
+								<ol>
+									<li class="intro"> <h4>An on-screen quest marker can make it less intrusive to inform the player of their current objective </h4></li>
+									<li class="intro"> <h4>The quest log can help player to have a better understanding of the storyline and their overall progress</h4></li>
+								</ol>
 							</div>
 						</section>
 

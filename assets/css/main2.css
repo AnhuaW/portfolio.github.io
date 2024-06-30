@@ -3176,13 +3176,13 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px rgba(212, 212, 255, 0.1);
+			border: solid 1px var(--rp-text);
 			border-left: 0;
 			border-right: 0;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(212, 212, 255, 0.035);
+				background-color: var(--rp-foam);
 			}
 
 		table td {
@@ -3210,7 +3210,7 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				border: solid 1px rgba(212, 212, 255, 0.1);
+				border: solid 1px rgba(109, 109, 243, 0.1);
 				border-left-width: 0;
 				border-top-width: 0;
 			}
