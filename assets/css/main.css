@@ -56,6 +56,11 @@
 
 /*custom css*/
 
+.wavy{
+	text-decoration-line:underline;
+	text-decoration-style:wavy;
+}
+
 /*fade-in-image*/
 .fade-in-image { animation: fadeIn 5s; }
 @keyframes fadeIn {
