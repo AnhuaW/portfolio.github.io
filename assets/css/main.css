@@ -534,11 +534,11 @@ li{
 .side {
 	background-color: var(--rp-surface);
 	border-radius:20px;
-	margin-left: 18vw;
-	margin-right:18vw;
+	margin-left: 16vw;
+	margin-right:16vw;
 	padding-top: 9vh;
-	padding-left: 9vw;
-	padding-right:9vw;
+	padding-left: 8vw;
+	padding-right:8vw;
 	padding-bottom: 9vh;
 	border-bottom: 9vh;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
