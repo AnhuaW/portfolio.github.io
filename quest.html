@@ -51,7 +51,7 @@
 				<div class="sidenav">
 					<a class="scrolly small-link" href="#banner">Overview</a>
 					<a class="scrolly small-link" href="#introduction">Introduction</a>
-					<a class="scrolly small-link" href="#problem-orig">Problem</a>
+					<a class="scrolly small-link" href="#orig-problem">Problem</a>
 					<a class = "scrolly small-link" href="#initial-design">Initial Design</a>
 					<a class = "scrolly small-link" href="#testing">Testing & Discovery</a>
 					<a class="scrolly small-link" href="#process">Process</a>
@@ -184,12 +184,12 @@
 							<hr>
 							<div class="inner">
 								<header class="major">
-									<h4>Discovery Driven by Playtest (User Testing)</h4>
+									<h4>Testing and Discovery</h4>
 								</header>
-								<h2> We discovered through playtesting that players felt <u class="wavy">frustrated</u> because of the <u class="wavy">limited</u> <u>quest</u> information.</h2>
+								<h2>Most players experience <u>frustration</u> because of the <u >limited</u> quest information.</h2>
 							</h2>
 							<p> However, as development continues and we get more play testing feedback, we discovered:</p>
-							<p>More than <span class="x-large-font pad"> 80% </span> of the players <strong>struggle</strong> with understanding what to expect for a given <strong> quest </strong> and tracking their <b>progress</b>.</p>
+							<p>More than <span class="x-large-font pad"> 80% </span> of the players <strong>struggle</strong> with understanding what to expect for the <u>current</u> quest and tracking their <b>progress</b>.</p>
 							<div class="row">
 								<div class="flex-col-2">
 									
@@ -216,7 +216,7 @@
 									</span>
 								</div>
 							</div>
-							<p>Although the narrative team and level designers iterated on the NPC dialogues in attempt to better communicate what needs to be done for each quest, the text-heavy information can be overwhelming for players given that the game encapsulates many characters each with unique storyline.</p>
+							<p>Although the narrative team and level designers iterated on the NPC dialogues in attempt to better communicate what needs to be done for each quest, the text-heavy information can be overwhelming for players</p>
 							<p>Our team realized the flaws with not showing any quest related information, and quickly pivoted the direction with a new problem statement:</p>
 
 							<h2 >How can I redesign the current game UI to increase the <u>visibility of system status</u> and effectively guide player through the rich narrative and gameplay content without spoiling the fun of exploration?
@@ -225,6 +225,21 @@
 							<p>
 								I decided to revisit my quest ui design and this time more research and analysis needed to be done so that I can persuade the team.
 							</p>
+
+							<div class="row">
+								<div class="flex-col-2">
+									<h5>The Original UI</h5>
+									<span class="image fit">
+										<img class="modal-img hover-target" src="img/games/quest/old_ui.gif" alt="The Original Quest UI with a Card Selecrion menu and a Settings menu">
+									</span>
+								</div>
+								<div class="flex-col-2">
+									<h5>The redesigned Quest UI</h5>
+									<span class="image fit">
+										<img class="modal-img hover-target" src="img/games/quest/quest_log.gif" alt="The Redesigned Quest UI">
+									</span>
+								</div>
+							</div>
 						</section>
 
 						<!--Process-->
@@ -234,13 +249,7 @@
 								<header class="major">
 									<h4>Research and Design Process</h4>
 								</header>
-								<h2 class>A resigned quest UI system consists of: </h2>
-								<ol>
-									<li> <h2> A <u>quest marker</u> for easy access to <u class="wavy">current</u> objective <span class="small-font"></span> </h2>
-										
-										</li>
-									<li><h2> A <u>quest log</u> for  <u class="wavy">contextual</u> background information and <u class="wavy">progress</u> tracking.</li>
-								</ol>
+								<h2 class> <u>Current objective</u> and <u>overall progress</u> are the two critical components of many well-designed game quest systems.</h2>
 			
 								<h4> Design Rationale and Competitive Analysis</h4>
 								<div class="table-wrapper">
@@ -248,8 +257,8 @@
 										<thead>
 											<tr>
 												<th></th>
-												<th>Quest Marker</th>
-												<th>Quest Log  </th>
+												<th>Current Objective</th>
+												<th>Overall Progress</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -272,7 +281,7 @@
 											<tr>
 												<td class="top-left">Examples from some narrative & quests driven games</td>
 												<td><span class="image fit"><img class="modal-img hover-target" src="img/games/quest/death_stranding.png" alt="Example from Death Stranding"></span></td>
-												<td><span class="image fit"><img class="modal-img hover-target" src="img/games/quest/bg3.png" alt="Example from Baldur's Gate"></span></td>
+												<td><span class="image fit"><img class="modal-img hover-target" src="img/games/quest/bg3.png" alt="Example from Baldur's Gate 3"></span></td>
 											</tr>
 											<tr>
 												<td class="top-left">More examples</td>
@@ -282,7 +291,7 @@
 											<tr>
 												<td class="top-left">More examples</td>
 												<td><span class="image fit"><img class="modal-img hover-target" src="img/games/quest/doom.jpg" alt="Example from Doom Eternal"></span></td>
-												<td><span class="image fit"><img class="modal-img hover-target" src="img/games/quest/zelda.png" alt="Proposed UI"></span></td>
+												<td><span class="image fit"><img class="modal-img hover-target" src="img/games/quest/zelda.png" alt="Example from The Legend of Zelda: Breath of the Wild"></span></td>
 
 											</tr>
 										</tbody>
@@ -292,8 +301,8 @@
 								</div>
 								<p>After I presented the initial findings to and had a few rounds of discussion with the team, we were able to reach an agreement that it is necessary to implement both because:</p>
 								<ol>
-									<li class="intro"> <h4>An on-screen <u>quest marker</u> can make it <u class="wavy">less intrusive</u> to inform the player of their <u class="wavy">current</u> objective </h4></li>
-									<li class="intro"> <h4>The <u>quest log</u> can help player to have a better understanding of the storyline and their <u class="wavy">overall progress</u></h4></li>
+									<li class="intro"> <h4>An on-screen <u>quest marker</u> can make it <u  >less intrusive</u> to inform the player of their <u  >current</u> objective </h4></li>
+									<li class="intro"> <h4>The <u>quest log</u> can help player to have a better understanding of the storyline and their <u  >overall progress</u></h4></li>
 								</ol>
 								<div class="row">
 									<div class="flex-col-2">
@@ -317,8 +326,9 @@
 							<hr>
 							<div class="inner">
 								<header class="major">
-									<h3>Final Design</h3>
+									<h3>Redesigned UI system</h3>
 								</header>
+								<h2 class>A resigned quest UI system that consists of a quest marker and a quest log for understanding <u>current objective</u> and <u>overall progress</u> tracking. </h2>
 								<h4>Quest Marker</h4>
 								<span class="image fit">
 									<img class="modal-img hover-target" src="img/games/quest/quest_marker_prototype.gif" alt="Quest Marker">
@@ -329,6 +339,8 @@
 									<img class="modal-img hover-target" src="img/games/quest/quest_log_prototype.gif" alt="Quest Log">
 								</span>
 								<p> The quest log is a pop-up menu that can be accessed from the pause menu. The quest log is designed to be easily navigable and can be updated in real-time as the player progresses through the game.</p>
+								<h4> Design Validation</h4>
+								<p>After the implementation of the new quest UI system, we conducted a series of play testing sessions with our own developers and new players to gather feedback. The feedback was overwhelmingly positive, with players reporting that the new system made it much easier to keep track of the quests. At the final showcase, the players that showed up at our booth would often hover over and click the quest marker when lost and most were able to successfully find information pertaining to the quest to help them progress in the game.</p>
 							</div>
 						</section>
 
@@ -336,7 +348,7 @@
 						
 						<div class="inner">
 							<header class="major">
-								<h3>Gameplay</h3>
+								<h3>In-Game Footage</h3>
 							</header>
 							<h4>Quest Marker</h4>
 							<div class="row">
@@ -354,7 +366,7 @@
 									</span>
 								</div>
 							</div>
-							<hr>
+		
 							<h4>Quest Log</h4>
 							<span class="image fit">
 								<img class="modal-img hover-target" src="img/games/quest/quest_log.gif" alt="Quest Log">
@@ -362,6 +374,8 @@
 							<hr>
 							<h4>Official Trailer with Gameplay Footage</h4>
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/9b7SihyH8Y4?si=kcNiXvq9U_JQjhXv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 
 						<!--Reflection-->
 						<section id="reflection">
@@ -373,7 +387,7 @@
 								<h4> Challenges</h4>
 								<div class="row">
 									<div class="flex-col-2">
-										<h5>Feature-Driven Development vs. User-Centric Design</h5>
+										<h5>Balancing Feature-Driven Development and User-Centric Design</h5>
 									</div>
 									<div class="flex-col-2">
 										<h5>Cross-team Communication</h5>
@@ -406,7 +420,7 @@
 
 									<li class="intro">
 										<h5>Visibility of character/game status</h5>
-										I realized that one of the most important thing in game UX/UI is designing to inform the character status or game status. Games are generally very complex with the amount of mechanics and information embedded in the system. It is crucial that designers make strategic moves on <strong>what</strong> to show and <strong>how</strong> to present the information to prevent players from feeling overwhelmed.
+										I realized that one of the most important thing in game UX/UI is designing to inform the character status or game status. Games are generally very complex with the amount of mechanics and information embedded in the system. It is crucial that designers make strategic moves on <strong>what to show</strong> and <strong>how to present</strong> the information to prevent players from feeling overwhelmed.
 									</li>
 								</ol>
 							</div>
